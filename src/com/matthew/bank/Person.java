@@ -10,8 +10,14 @@ public abstract class Person {
     public Person(String firstName, String lastName, String address, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        Address = address;
+        this.Address = address;
         this.age = age;
+    }
+
+    public Person(String firstName, String lastName, String address){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.Address = address;
     }
 
     public String getFirstName() {
